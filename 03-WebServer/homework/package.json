@@ -5,6 +5,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.2.2",
+    "nodemon": "^2.0.20",
     "request": "^2.88.2"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
   }
 }

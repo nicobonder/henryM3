@@ -174,6 +174,7 @@ function problemD () {
   .then(
     (stanza) => blue(stanza), //success handler
     (err) => magenta( new Error(err)) //error handler
+    //puede ser con catch(err) => magenta( new Error(err))
     )
 
 }

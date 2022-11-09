@@ -138,7 +138,8 @@ function problemC () {
   // ???
   const promises = filenames.map((file) => promisifiedReadFile(file));
   filenames.reduce((promise, file, index) => {
-    return promise.then ((stanza) => { //retorna la promesa q sigue
+    return promise
+    .then ((stanza) => { //retorna la promesa q sigue
       if (stanza) blue(stanza); //si existe una promesa +
       return promisifiedReadFile(file) //ahi retorna esto
     });
