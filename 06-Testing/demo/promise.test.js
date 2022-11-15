@@ -17,7 +17,7 @@ xit('should resolve to Henry Promise (async/await)', async () => {
 
 xit('should reject to Rejected Promise', () => {
   expect.assertions(1);
-  return promisifiedFunction(false).catch(e => {
+  return promisifiedFunction(true).catch(e => { //decia false pero Franco cambio en la clase porque habia un error
     expect(e).toMatch('Rejected Promise')
   });
 });
